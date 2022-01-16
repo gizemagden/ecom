@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": "asdfgsdfg",
+      "name": "Red Dress",
+      "brand": "Defacto",
+      "size": "S",
+      "color": "#FF0000",
+      "price": "75$",
+      "src": "./assets/products/1.png"
+    },    {
+      "id": "wqerewr",
+      "name": "Blue Dress",
+      "brand": "Defacto",
+      "size": "S",
+      "color": "#FF0000",
+      "price": "75$",
+      "src": "./assets/products/2.png"
+    },
+    {
+      "id": "yui",
+      "name": "Big Dress",
+      "brand": "Defacto",
+      "size": "S",
+      "color": "#FF0000",
+      "price": "75$",
+      "src": "./assets/products/3.png"
+    },
+    {
+      "id": "rtyt",
+      "name": "Princess Dress",
+      "brand": "Defacto",
+      "size": "S",
+      "color": "#FF0000",
+      "price": "75$",
+      "src": "./assets/products/4.png"
+    },
+    {
+      "id": "rtuyet",
+      "name": "Bike Dress",
+      "brand": "Defacto",
+      "size": "S",
+      "color": "#FF0000",
+      "price": "75$",
+      "src": "./assets/products/5.png"
+    },
+    {
+      "id": "eeee",
+      "name": "Sun Dress",
+      "brand": "Defacto",
+      "size": "S",
+      "color": "#FF0000",
+      "price": "75$",
+      "src": "./assets/products/6.png"
+    },
+    {
+      "id": "teyutyu",
+      "name": "Moon Dress",
+      "brand": "Defacto",
+      "size": "S",
+      "color": "#FF0000",
+      "price": "75$",
+      "src": "./assets/products/7.png"
+    }
+  ],
+  "favorites": []
+}

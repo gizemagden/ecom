@@ -1,6 +1,28 @@
 import * as ACTION_TYPES from './ActionTypes';
 
-export const EcomReducer = (state: object, action: object) => {
+interface ProductItem {
+  id: string;
+  name: string;
+  brand: string;
+  size: string;
+  color: string;
+  price: string;
+  src: string;
+}
+
+interface Products extends Array<ProductItem>{}
+
+interface State {
+  products: Products,
+  favorites: Products,
+}
+
+interface Action {
+  type: string,
+  value: string,
+}
+
+export const EcomReducer = (state: State, action: Action) => {
   switch (action.type) {
     case ACTION_TYPES.ADD_TO_FAVORITES:
       return {

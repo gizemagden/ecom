@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import BoxList from './components/BoxList';
 import Basket from './components/Basket';
 import ProductDetails from './components/ProductDetails';
-import './App.css';
+import './styles/index.scss';
 
 const App = () => {
   return (

@@ -1,0 +1,55 @@
+@import './variables/colors';
+
+.productDetails {
+  padding: 30px;
+  display: flex;
+
+  &-item {
+    margin: 10px;
+  }
+
+  .baseSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .sideImages, .rightSide {
+    @extend .baseSide;
+  }
+  
+  .productInfo {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .baseButton {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  .addTocartButton {
+    @extend .baseButton;
+    background-color: $buttonColor;
+  }
+  
+  .mainImage img {
+    width: 400px;
+  }
+
+  .sideImages {
+    justify-content: flex-start;
+    img {
+      width: 100px;
+    }
+  }
+  
+  .rightSide {
+    max-height: 300px;
+  }
+}

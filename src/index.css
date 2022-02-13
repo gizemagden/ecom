@@ -37,12 +37,3 @@ input {
   box-sizing: border-box;
   font-size: 14px;
 }
-
-.productList {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.productItem {
-  margin: 20px;
-}

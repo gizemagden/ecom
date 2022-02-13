@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { useEcom } from '../context/context';
 import { addProductToFavorites } from '../context/ActionCreators';
 import { useLocation, Link } from 'react-router-dom';
+import { ReactComponent as Favorite } from '../assets/favorite.svg';
 
 const BoxList = () => {
   const { state: { products, favorites }, dispatch } = useEcom();
@@ -17,11 +18,14 @@ const BoxList = () => {
 
   return (
     <div className='productList'>
-      {currentProducts.map(product => (
-        <>
-          <div className='favorite' onClick={() => { addToFav(product); }} />
-          <Link to={`/details/${product.id}`}>
-            <div className='productItem' key={product.id}>
+      {currentProducts.map(product => {
+        const isFavorite = favorites.find(elem => elem.id === product.id) !== undefined;
+        return (
+          <div className='productItem' key={product.id}>
+            <div className={`favorite ${isFavorite ? 'isChecked' : ''}`} onClick={() => { addToFav(product); }}>
+              <Favorite />
+            </div>
+            <Link to={`/details/${product.id}`}>
               <img src={product.src} alt="product" />
               <div className='details'>
                 <div className='name'>
@@ -33,10 +37,10 @@ const BoxList = () => {
                   </b>
                 </div>
               </div>
-            </div>
-          </Link>
-        </>
-      ))}
+            </Link>
+          </div>
+        );
+      })}
     </div>
   );
 };

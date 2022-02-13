@@ -8,9 +8,11 @@ const Favorites = () => {
   return (
     <>
       <Favorite />
-      <div>
-        {favorites.length}
-      </div>
+      {/*
+        <div>
+          {favorites.length}
+        </div>
+      */}
     </>
   );
 }
